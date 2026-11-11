@@ -11,3 +11,6 @@ Statička web-stranica za GitHub Pages.
 **VAŽNO:** Ako je `m89.online` trenutno domena produkcijske aplikacije, ne usmjeravajte je na ovu web-stranicu bez odluke gdje će aplikacija ubuduće biti dostupna. Za probno objavljivanje uklonite `CNAME` i koristite GitHub Pages URL.
 
 Tekstovi i vizuali su radna verzija. Zamijenite generičke elemente stvarnim fotografijama i potvrđenim cijenama.
+
+
+Službeni vektorski logo: `assets/m89-logo.svg` (iz dostavljenog `logo_CentarM89_transparent.svg`, prilagođen viewBox radi prikaza bez praznih margina).
