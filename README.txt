@@ -1,13 +1,7 @@
-M89 — radna verzija za GitHub Pages
+M89 — završna najavna verzija (17.11.2026)
 
-Sadrzaj: index.html, style.css, original-100/index.html, cjenik/index.html
-
-Postavljanje:
-1. Otvori repozitorij mateasedlacek/m89online na GitHubu.
-2. Ucitaj SADRZAJ ove ZIP datoteke u korijen repozitorija (ne cijeli nadredjeni folder).
-3. Settings > Pages > Build and deployment: Deploy from a branch, main, / (root), Save.
-4. Otvori https://mateasedlacek.github.io/m89online/
-
-NAPOMENA: prije uploada provjeriti postojece datoteke u repozitoriju; upload istih imena moze ih zamijeniti. Napraviti backup.
-Domena m89.online ostaje na Podiji dok se izricito ne promijene DNS zapisi.
-Ova verzija je za pregled; obrazac kupnje nije aktivan, pravni uvjeti i cijene teretane nisu konacni.
+Sadržaj mape postaviti u KORIJEN GitHub Pages repozitorija (index.html mora biti u rootu).
+Podia obrazac: https://members.m89.online/email_lists/916568/subscriptions
+Prije javne objave: testirati prijavu, automatski mail i double opt-in; provjeriti radni nacrt politike privatnosti te evidentiranje privole.
+Važno: HTML checkbox ne jamči da Podia bilježi privolu.
+Za domenu m89.online DNS prebaciti tek kad GitHub Pages bude spreman; ne dirati members CNAME ni e-mail DNS zapise.
