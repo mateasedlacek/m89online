@@ -9,3 +9,25 @@
 .site-header{min-height:100px}.brand{width:205px;max-width:38vw}.footer-logo{width:175px}
 @media(max-width:760px){.site-header{min-height:84px}.brand{width:165px}}
 @media(max-width:480px){.site-header{min-height:76px}.brand{width:130px}.footer-logo{width:155px}}
+
+/* M89: konzistentni grafički razdjelnici i strelice na svim uređajima */
+.ticker-track .ticker-divider{display:inline-block;flex:0 0 13px;width:13px;height:2px;background:#061624;border-radius:2px;vertical-align:middle;transform:rotate(-35deg);font-size:0}
+.site-header nav a,.hero-buttons a,.social-inner a,.footer a{font-variant-emoji:text}
+/* Mobilni hero: fotografija dobiva vlastiti prostor iznad teksta */
+@media(max-width:760px){
+ .hero{min-height:0;background:linear-gradient(180deg,rgba(5,10,17,.05) 0px,rgba(5,10,17,.12) 230px,#080e17 405px,#080e17 100%),url('assets/hero-kutija.png') 66% top / auto 435px no-repeat,#080e17}
+ .hero-grid{min-height:0;display:block;padding-top:330px;padding-bottom:90px}
+ .hero-copy{max-width:100%;padding:18px 0 55px}
+ .hero h1{font-size:clamp(43px,9.4vw,70px);line-height:1.04;letter-spacing:-2.8px;overflow-wrap:normal}
+ .hero .lead{margin-top:25px}
+ .hero .scroll-tip{bottom:24px}
+}
+@media(max-width:480px){
+ .hero{background:linear-gradient(180deg,rgba(5,10,17,.04) 0px,rgba(5,10,17,.16) 200px,#080e17 350px,#080e17 100%),url('assets/hero-kutija.png') 66% top / auto 375px no-repeat,#080e17}
+ .hero-grid{padding-top:285px;padding-bottom:85px}
+ .hero-copy{padding:15px 0 50px}
+ .hero h1{font-size:clamp(39px,9.8vw,53px);letter-spacing:-2.2px}
+ .hero .lead{font-size:clamp(16px,4.5vw,20px);line-height:1.35}
+ .hero-buttons{margin-top:34px}
+ .ticker-track{gap:24px}
+}
