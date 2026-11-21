@@ -57,6 +57,7 @@ document.getElementById('orderForm').addEventListener('submit',async e=>{
       body:JSON.stringify(data)
     });
     const result=await response.json().catch(()=>({}));
+    console.log('M89 TEST — odgovor funkcije:', response.status, result);
     if(response.ok && result.success===true && result.test_mode===true && result.saved===true){
         status.textContent=result.message || 'Testna narudžba uspješno spremljena.';
     }else if(response.status===401){
