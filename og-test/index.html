@@ -63,8 +63,7 @@ document.getElementById('orderForm').addEventListener('submit',async e=>{
     }else if(response.status===401){
       status.textContent='HTTP 401: provjeri JWT postavke Edge Function.';
     }else{
-      status.textContent='Test nije prošao (HTTP '+response.status+'): '+(result.error||'Nepoznat odgovor.');
-    }
+status.textContent='HTTP '+response.status+' | Odgovor: '+JSON.stringify(result);    }
   }catch(error){status.textContent='Nije moguće kontaktirati funkciju. Provjeri internetsku vezu i postavke funkcije.';}
   finally{window.turnstile?.reset();button.disabled=false;button.textContent='TESTIRAJ OBRAZAC →';status.scrollIntoView({behavior:'smooth',block:'nearest'});}
 });
