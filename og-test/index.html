@@ -57,8 +57,8 @@ document.getElementById('orderForm').addEventListener('submit',async e=>{
       body:JSON.stringify(data)
     });
     const result=await response.json().catch(()=>({}));
-    if(response.ok && result.success===true && result.test_mode===true && result.saved===false){
-      status.textContent='USPJEH: Podaci obrasca i Turnstile provjera su prošli. Nijedna narudžba nije spremljena.';
+    if(response.ok && result.success===true && result.test_mode===true && result.saved===true){
+        status.textContent=result.message || 'Testna narudžba uspješno spremljena.';
     }else if(response.status===401){
       status.textContent='HTTP 401: provjeri JWT postavke Edge Function.';
     }else{
