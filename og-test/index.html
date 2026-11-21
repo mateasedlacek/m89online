@@ -30,7 +30,7 @@ document.getElementById('orderForm').addEventListener('submit',async e=>{
   if(!token){status.textContent='Dovrši Turnstile provjeru prije testa.';status.classList.add('show');return;}
   const checks=[...form.querySelectorAll('label.check input[type="checkbox"]')];
   if(checks.length!==4){status.textContent='Greška u konfiguraciji potvrda obrasca.';status.classList.add('show');return;}
-  const id=crypto.randomUUID();
+  const id=form.dataset.zahtjevId || (form.dataset.zahtjevId=crypto.randomUUID());
   const data={
     turnstile_token:token,
     zahtjev_id:id,
