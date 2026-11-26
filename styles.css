@@ -39,3 +39,51 @@
 @media(max-width:480px){.site-header nav .nav-pricing{font-size:11px}.price-page>h1{font-size:44px}}
 
 .massage-note{display:block;font-size:12px;font-weight:400;line-height:1.5;color:#9eafc1;margin-top:4px;letter-spacing:0}
+
+
+/* M89 - Footer s četiri stupca */
+
+.footer-grid.footer-grid-four {
+  grid-template-columns: 1fr 1fr 1fr 1.4fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.footer-grid-four > div {
+  min-width: 0;
+}
+
+.footer-grid-four a {
+  overflow-wrap: anywhere;
+}
+
+.footer-grid-four .footer-logo {
+  width: 175px;
+  max-width: 100%;
+}
+
+.footer-grid-four h3 {
+  margin: 12px 0 20px;
+}
+
+@media (max-width: 900px) {
+  .footer-grid.footer-grid-four {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footer-grid-four > div:first-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid.footer-grid-four {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-grid-four .footer-logo {
+    width: 155px;
+  }
+}
